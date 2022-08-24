@@ -12,3 +12,11 @@ if sys.version_info.major == 3 and sys.version_info.minor >= 9:
 else:
     from typing import List
     listtype = List
+
+
+@dataclass
+class Cell:
+    value: int
+    marked: bool = False
+    
+boardtype = listtype[listtype[Cell]]
